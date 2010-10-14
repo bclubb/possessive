@@ -10,7 +10,8 @@ Code from http://stackoverflow.com/questions/1115283/making-a-rails-inflection-f
 "Sooners".possessive # => Sooners'
 
 == Install
-Rails 3
+Add this to your Gemfile
+
 gem "possessive" 
 
 
