@@ -5,12 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "possessive"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = "Rails plugin that lets you get a possessive form of a string for use on sites"
+    gem.description = "Rails plugin that lets you get a possessive form of a string for use on sites"
     gem.email = "bclubb@gmail.com"
     gem.homepage = "http://github.com/bclubb/possessive"
-    gem.authors = ["Brian Clubb"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.authors = ["Brian Clubb", "Jamie Flournoy", "Nick Howard"]
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

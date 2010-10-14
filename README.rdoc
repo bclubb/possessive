@@ -1,6 +1,18 @@
 = possessive
 
-Description goes here.
+Rails plugin that lets you get a possessive form of a string for use on sites
+
+Code from http://stackoverflow.com/questions/1115283/making-a-rails-inflection-for-possessive-strings
+
+== Example
+
+"Brian".possessive # => Brian's
+"Sooners".possessive # => Sooners'
+
+== Install
+Rails 3
+gem "possessive" 
+
 
 == Note on Patches/Pull Requests
  
