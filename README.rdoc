@@ -6,7 +6,7 @@ Code from http://stackoverflow.com/questions/1115283/making-a-rails-inflection-f
 
 == Example
 
-"Brian".possessive # => Brian's
+"Brian".possessive # => Brian's<br>
 "Sooners".possessive # => Sooners'
 
 == Install
