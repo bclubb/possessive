@@ -5,5 +5,5 @@ String.class_eval do
 end
 
 module Possessive
-  APOSTROPHE_CHAR = "’"
+  APOSTROPHE_CHAR = '’'
 end
