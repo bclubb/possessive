@@ -10,4 +10,8 @@ class TestPossessive < Test::Unit::TestCase
   test "Possessive with a string ending with s" do
     assert_equal "Steelers’", "Steelers".possessive
   end
+
+  test "Possessive with a string ending with S" do
+    assert_equal "STEELERS’", "STEELERS".possessive
+  end
 end
