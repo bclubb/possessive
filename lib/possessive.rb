@@ -1,12 +1,5 @@
-# encoding: utf-8
+require 'possessive/inflector/inflections'
+require 'possessive/inflector/methods'
 
-String.class_eval do
-  def possessive
-    return self if self.empty?
-    self + ('s' == self[-1,1] ? Possessive::APOSTROPHE_CHAR : Possessive::APOSTROPHE_CHAR+"s")
-  end
-end
-
-module Possessive
-  APOSTROPHE_CHAR = '’'
-end
+require 'possessive/inflections'
+require 'core_ext/string/inflections'
