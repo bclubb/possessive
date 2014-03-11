@@ -4,6 +4,7 @@
 ## TEXTMATE
 *.tmproj
 tmtags
+/*.tm_properties
 
 ## EMACS
 *~
@@ -17,5 +18,7 @@ tmtags
 coverage
 rdoc
 pkg
+/*.ruby-gemset
+/*.ruby-version
 
 ## PROJECT::SPECIFIC
