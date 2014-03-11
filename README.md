@@ -19,7 +19,7 @@ Sample configuration for German:
     # config/initializers/inflections.rb
     Possessive::Inflector.inflections(:de) do |inflect|
       inflect.possessive /$/, 's'
-      inflect.possessive /(ch|chs|sch|ss|x|z)$/i, '\1es'
+      inflect.possessive /(s|x|z)$/i, '\1’'
     end
 
 ## Note on Patches/Pull Requests

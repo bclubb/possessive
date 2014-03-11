@@ -13,14 +13,13 @@ Gem::Specification.new do |s|
   s.description = %q{Rails plugin that lets you get a possessive form of a string for use on sites}
   s.email = %q{bclubb@gmail.com}
   s.extra_rdoc_files = [
-    "LICENSE",
-     "README.rdoc"
+    "LICENSE"
   ]
   s.files = [
     ".document",
      ".gitignore",
      "LICENSE",
-     "README.rdoc",
+     "README.md",
      "Rakefile",
      "VERSION",
      "lib/possessive.rb",

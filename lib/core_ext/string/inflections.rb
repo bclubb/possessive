@@ -1,7 +1,7 @@
 require 'inflector/methods'
 
 class String
-  def possessive(locale = :en)
-    Possessive::Inflector.possessive(self, locale)
+  def possessive(locale = nil)
+    Possessive::Inflector.possessive(self, locale || I18n.locale)
   end
 end

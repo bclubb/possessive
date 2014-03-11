@@ -36,6 +36,7 @@ module Possessive
       #   possessive /$/, '’s'
       #   possessive 'it', 'its'
       def possessive(rule, replacement)
+        rule = /^#{rule}$/ if rule.is_a?(String)
         @possessives.insert(0, [rule, replacement])
       end
 

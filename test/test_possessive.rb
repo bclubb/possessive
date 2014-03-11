@@ -24,17 +24,31 @@ class InflectorTest < Test::Unit::TestCase
     assert_equal "its", "it".possessive
   end
 
+  test "Possessive with something containing the string rule: 'it', 'its'" do
+    assert_equal "little’s", "little".possessive
+  end
+
   test "Possessive with an empty string" do
     assert_equal "", "".possessive
   end
 
   test "Possessive with localization" do
     Possessive::Inflector.inflections(:de) do |inflect|
-      inflect.possessive(/$/, 's')
+      inflect.possessive /$/, 's'
+      inflect.possessive /(s|x|z)$/i, '\1’'
     end
 
-    assert_equal('Brians', 'Brian'.possessive(:de))
-    assert_equal('Brian’s', 'Brian'.possessive)
+    assert_equal('Bachs', 'Bach'.possessive(:de))
+    assert_equal('Bach’s', 'Bach'.possessive)
+
+    assert_equal('Blitz’', 'Blitz'.possessive(:de))
+    assert_equal('Blitz’s', 'Blitz'.possessive)
+
+    assert_equal('Felix’', 'Felix'.possessive(:de))
+    assert_equal('Felix’s', 'Felix'.possessive)
+
+    assert_equal('Fuchs’', 'Fuchs'.possessive(:de))
+    assert_equal('Fuchs’', 'Fuchs'.possessive)
 
     Possessive::Inflector.inflections(:de) { |inflect| inflect.clear }
 
