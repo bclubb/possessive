@@ -1,4 +1,4 @@
-require 'inflector/methods'
+require 'possessive/inflector/methods'
 
 class String
   def possessive(locale = nil)

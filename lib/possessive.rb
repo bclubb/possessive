@@ -1,5 +1,5 @@
-require 'inflector/inflections'
-require 'inflector/methods'
+require 'possessive/inflector/inflections'
+require 'possessive/inflector/methods'
 
-require 'inflections'
+require 'possessive/inflections'
 require 'core_ext/string/inflections'

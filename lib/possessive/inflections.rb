@@ -1,5 +1,5 @@
 # encoding: utf-8
-require 'inflector/inflections'
+require 'possessive/inflector/inflections'
 
 #--
 # Defines the standard inflection rules. These are the starting point for
